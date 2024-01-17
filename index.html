@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repositories</h1>
+        <div>
+            <button id="homeBtn">Home</button>
+            <label for="username">GitHub Username:</label>
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="userProfile" class="user-profile"></div>
+
+        <div class="loader" id="loader">loading...</div>
+
+        <div>
+            <label for="repoSearch">Search Repositories:</label>
+            <input type="text" id="repoSearch" placeholder="Enter repository name">
+        </div>
+
+        <div id="repositories"></div>
+        <div id="pagination"></div>
+
+        <div>
+            <label for="perPage">Repositories per page:</label>
+            <select id="perPage">
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+    </div>
+    <footer>
+        <p>Email: pawanshinde3082003@gmail.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
